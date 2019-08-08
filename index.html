@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Co2 Cars</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <link rel="stylesheet" href="./static/bootstrap.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/websiteunityminigame.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="page1.html">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="page1.html">Home</a>
+          </li>
+          <li class="nav-item active" >
+            <a class="nav-link" href="index.html">Game <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://unity.com/" target="_blank"> Unity Infomation</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+      <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+          <div class="title">Co2 Cars</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./static/bootstrap.min.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <title>Unity Infomation</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="page1.html">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://unity.com/" target="_blank"> Unity Infomation</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="display-3" style="text-align:center"><a href="index.html">Unity game project</a></h1>
+    <hr class="my-2"/>
+    <p class="lead">
+      Unity is fast, powerful, and relatively simple to get started with.
+      Within unity, we can design models using simple 3D shapes and then we can use scripts written in C# to control and interact with them.
+      C# is a powerful language that allows us to accomplish complex tasks, is a popular language, with lots of examples of coding solutions.
+      Unity’s ability to package games into executable files provide the end game with a finished look and feel.
+      <br />
+      <br />
+      In my game I have attempted to replicate CO<sub>2</sub> powered drag cars.
+      My game is designed to be played by two people, it relises on reaction time to be competitive.
+      The game is started by pressing one of the buttons, at that point the game scence will switch to the main scene and the
+      camera will start moving around the race cars. This is done to give the players an introduction to the game and excite them visually with models of the real cars.
+      During this introduction the cars are produce an idling engine sound.
+      Once this is over the start light appear. This consisces of 4 sets of circles which represent starting lights.
+      If at anytime one of the
+      buttons are pressed before the green light comes on a false start message, appear and the timer will restart.
+      Once the lights pop up, a yellow light will go on every two seconds, there are 3 sets of these, there is also an audio
+      queue consisting of a beeping sound. After the three sets of yellow lights a green light will come on randomly between 0 and 6 seconds.
+      This is done so that players cannot predict the start time, a louder and different sound plays for the green light.
+      <br />
+      <br />
+      When the cars take off the sound changes to a more agressive engine racing sound.
+      The camera programmed to follow the winning car, this enables us to see the losing car behind it. This helps create a feeling
+       of beating the other players. When the winning car reaches the finish line there are particles that show up
+      that represent the colour of the winning car, again this done to clearly show the winner.
+      Once both cars reach the end a 4 second timer starts to allow the winner to admire the game, them the game changes
+      scenes.
+      <br />
+      <br />
+      The next scence shows the winner only rotating on a raising platform while the camera is set on a
+      dolly that moves around wining car. Cheering music plays in the backgroup and there are
+       stands filled with people that give the illusion of a crowd making the player feel accomished.
+    </p>
+
+  </div>
+
+</body>
+</html>
